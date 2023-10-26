@@ -1,5 +1,16 @@
 <?php
+
+namespace sistema\Nucleo;
+
+use sistema\Suporte\Template;
+
 class Controlador {
-   // namespace sistema\Nucleo;
+    
+    protected Template $template;
+    
+    public function __contruct(string $diretorio) {
+        
+        $this->template = new Template($diretorio);
+    }
     
 }
